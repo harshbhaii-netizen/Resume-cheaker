@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f6f2">
+    <meta name="description" content="A private, explainable resume-to-job description matching tool.">
+    <title>ResumeFit — thoughtful candidate matching</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="ResumeFit home">
+        <span class="brand-mark" aria-hidden="true">r.</span>
+        <span>resumefit</span>
+      </a>
+      <div class="privacy-pill"><span aria-hidden="true"></span> Private by design</div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> A clearer first look</div>
+          <h1 id="page-title">Find the fit.<br><span>Not just the keywords.</span></h1>
+          <p>Compare a resume with a role in seconds. See what aligns, what’s missing, and exactly how the score was built.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="art-card art-card-back"><span class="art-dot"></span><span class="art-line"></span><span class="art-line short"></span></div>
+          <div class="art-card art-card-front"><span class="art-check">✓</span><span class="art-line"></span><span class="art-line medium"></span><span class="art-tag">A thoughtful match</span></div>
+          <span class="spark spark-one">✳</span><span class="spark spark-two">✦</span>
+        </div>
+      </section>
+
+      <section class="workspace" aria-label="Resume matching workspace">
+        <div class="section-heading">
+          <div><span class="step-label">YOUR WORKSPACE</span><h2>Start with the essentials</h2></div>
+          <span class="step-count">01 <span>—</span> 02</span>
+        </div>
+
+        <form id="analyzer-form">
+          <div class="input-grid">
+            <section class="input-card upload-card">
+              <div class="card-heading">
+                <span class="step-number">01</span>
+                <div><h3>Add a resume</h3><p>We’ll extract the details that matter.</p></div>
+              </div>
+              <label class="upload-zone" id="drop-zone" for="resume-file">
+                <input id="resume-file" name="resume_file" type="file" accept=".pdf,.docx,.txt,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain" required>
+                <span class="upload-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M5 15v4h14v-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="upload-title" id="upload-title">Drop a resume here</span>
+                <span class="upload-subtitle" id="upload-subtitle">or <span>browse files</span></span>
+                <span class="file-types">PDF, DOCX or TXT · Up to 10 MB</span>
+              </label>
+              <p class="field-note"><span aria-hidden="true">⌁</span> Your file is processed temporarily and never saved.</p>
+            </section>
+
+            <section class="input-card jd-card">
+              <div class="card-heading">
+                <span class="step-number">02</span>
+                <div><h3>Describe the role</h3><p>Paste the job description you’re hiring for.</p></div>
+              </div>
+              <label class="sr-only" for="job-description">Job description</label>
+              <textarea id="job-description" name="job_description" maxlength="20000" placeholder="What will this person do? What skills or experience are essential? Paste the job description here…" required></textarea>
+              <div class="textarea-footer"><span>Tip: include the must-haves for a more useful comparison.</span><span id="char-count">0 / 20,000</span></div>
+            </section>
+          </div>
+
+          <div class="form-footer">
+            <p><span class="info-icon" aria-hidden="true">i</span> A score is a starting point for human review, never a hiring decision.</p>
+            <button class="analyze-button" type="submit" id="analyze-button">
+              <span id="button-label">Analyze match</span>
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12m0 0-5-5m5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </form>
+
+        <div class="status-message" id="status-message" role="status" aria-live="polite" hidden></div>
+        <section class="results" id="results" aria-labelledby="results-title" hidden></section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Thoughtful tools for better hiring.</span>
+      <span>Transparent by default <span class="footer-dot">·</span> Human-led always</span>
+    </footer>
+  </body>
+</html>
