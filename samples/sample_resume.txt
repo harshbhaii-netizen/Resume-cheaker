@@ -1,0 +1,23 @@
+Jordan Lee
+jordan.lee@example.com
++1 202 555 0142
+
+Professional Summary
+Data Analyst with 3 years of experience turning business data into useful reports
+and practical recommendations. Experienced in Python, SQL, data cleaning, and
+presenting findings to cross-functional teams.
+
+Skills
+Python, SQL, Pandas, NumPy, Scikit-learn, Tableau, AWS, Git
+
+Experience
+Data Analyst | Example Analytics (fictional)
+2022 - 2025
+- Analyzed customer and sales data with Python, Pandas, and SQL.
+- Built Tableau dashboards to help teams track business performance.
+- Used Scikit-learn to prototype a customer-churn analysis.
+- Presented clear, data-backed recommendations to business stakeholders.
+
+Education
+B.S. Computer Science
+Example University (fictional)

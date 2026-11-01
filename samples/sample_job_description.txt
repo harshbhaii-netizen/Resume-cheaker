@@ -1,0 +1,19 @@
+Data Analyst
+
+We are looking for a Data Analyst with 3+ years of experience who can turn
+business data into clear, actionable insights. You will clean and analyze
+datasets, build reports and dashboards, and communicate findings to
+cross-functional teams.
+
+Required skills:
+- Python and SQL
+- Pandas and NumPy
+- Scikit-learn
+- Tableau
+- Clear communication and data storytelling
+- Bachelor's degree in Computer Science, Statistics, or a related field
+
+Nice to have:
+- AWS
+- Docker
+- Experience working with customer or sales data

@@ -9,6 +9,11 @@ const submitButton = document.querySelector("#analyze-button");
 const buttonLabel = document.querySelector("#button-label");
 const statusMessage = document.querySelector("#status-message");
 const results = document.querySelector("#results");
+const appName = document.querySelector('meta[name="application-name"]').content.trim();
+document.title = `${appName} — thoughtful candidate matching`;
+document.querySelector("#brand-name").textContent = appName;
+document.querySelector(".brand-mark").textContent = `${appName.charAt(0).toLowerCase()}.`;
+document.querySelector(".brand").setAttribute("aria-label", `${appName} home`);
 const maxFileSize = 10 * 1024 * 1024;
 const allowedExtensions = new Set(["pdf", "docx", "txt"]);
 

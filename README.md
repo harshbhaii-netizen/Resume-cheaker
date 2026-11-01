@@ -19,9 +19,14 @@ Open <http://127.0.0.1:8000>. To run the tests:
 python -m unittest discover -s tests -v
 ```
 
+## Customize the app name
+
+Edit the `application-name` meta tag in `static/index.html`. The header and browser tab name update automatically.
+
 ## What it supports
 
 - PDF, DOCX, and TXT resume uploads (up to 10 MB).
+- Ready-to-use fictional examples: [sample resume](./samples/sample_resume.txt) and [sample job description](./samples/sample_job_description.txt).
 - Basic extraction of contact details, education, experience dates, and skills.
 - A transparent score weighted across skills (40%), experience (30%), education (20%), and TF-IDF text similarity (10%).
 - A small editable-in-code skill alias list, including common abbreviations and related tools.
